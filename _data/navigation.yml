@@ -1,9 +1,9 @@
 main:
-  - title: '<i class="fa fa-star-half-o"></i> Wiki'
+  - title: '<i class="fa fa-server"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fa fa-newspaper-o"></i> News'
+  - title: '<i class="fa fa-server"></i> News'
     url: /news/
-  - title: '<i class="fa fa-globe"></i> Planet'
+  - title: '<i class="fa fa-server"></i> Planet'
     url: /planet/
   - title: '<i class="fab fa-lg fa-fw fa-github"></i> GitHub' # <i class="fa fas fa-xs fa-external-link-alt"></i>'
     url: "https://github.com/ustclug"

@@ -1,13 +1,13 @@
 main:
-  - title: '<i class="fa fa-server"></i> Wiki'
+  - title: '<i class="fa fa-star-half-o"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fad fa-lg fa-fw fa-newspaper"></i> News'
+  - title: '<i class="fa fa-newspaper-o"></i> News'
     url: /news/
-  - title: '<i class="fad fa-lg fa-fw fa-planet-ringed fa-swap-opacity"></i> Planet'
+  - title: '<i class="fa fa-globe"></i> Planet'
     url: /planet/
   - title: '<i class="fab fa-lg fa-fw fa-github"></i> GitHub' # <i class="fa fas fa-xs fa-external-link-alt"></i>'
     url: "https://github.com/ustclug"
-  - title: '<i class="fad fa-lg fa-fw fa-server"></i> Mirrors'
+  - title: '<i class="fa fa-server"></i> Mirrors'
     url: "https://mirrors.ustc.edu.cn/"
 
 wiki:

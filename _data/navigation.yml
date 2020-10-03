@@ -1,7 +1,7 @@
 main:
-  - title: '<i class="fa fa-star-half-o"></i> Wiki'
+  - title: '<i class="fas fa-star"></i> Wiki'
     url: /wiki/
-  - title: '<i class="fa fa-star-half-o"></i> News'
+  - title: '<i class="fas fa-star"></i> News'
     url: /news/
   - title: '<i class="fa fa-globe"></i> Planet'
     url: /planet/

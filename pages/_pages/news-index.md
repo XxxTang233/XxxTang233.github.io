@@ -1,5 +1,5 @@
 ---
-title: "LUG 新闻"
+title: "HCOI 新闻"
 permalink: /news/
 layout: home
 pagination:

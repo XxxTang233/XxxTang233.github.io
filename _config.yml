@@ -14,12 +14,12 @@ theme                    : "minimal-mistakes-jekyll"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "LUG @ USTC"
+title                    : "HCOI"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "USTCLUG"
-description              : "Under construction!"
-url                      : "https://lug.ustc.edu.cn/"
+name                     : "HCOI"
+description              : "HUNAN"
+url                      : "https://we.sakura.bio/"
 static_url               : "/static"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ustclug/website" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -87,10 +87,10 @@ analytics:
 
 # Site Author, this is the default
 author:
-  name             : "USTCLUG"
-  avatar           : "https://secure.gravatar.com/avatar/94c03bc620ea2cf7dc239ac0535cad8e?s=256&d=identicon&r=g"
-  bio              : "中国科学技术大学 Linux 用户协会"
-  location         : "USTC"
+  name             : "HCOI"
+  avatar           : "http://img.zaicode.com/avatar.jpg"
+  bio              : "湘信大 Linux 用户协会"
+  location         : "HUNAN"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

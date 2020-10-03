@@ -6,6 +6,6 @@ pagination:
   enabled: true
   collection: news
 header:
-  overlay_image: "/static/splash/autumn-1.jpg"
+  overlay_image: "http://img.zaicode.com/heng/zakim.jpg"
   overlay_filter: 0.2
 ---

@@ -7,5 +7,5 @@ pagination:
   enabled: true
   collection: planet
 header:
-  overlay_image: "/static/splash/galaxy-1.jpg"
+  overlay_image: "http://img.zaicode.com/heng/galaxy.jpg"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "LUG Planet"
+title: "HCOI Planet"
 tagline: "A planet where ideas sparkle"
 permalink: /planet/
 layout: home

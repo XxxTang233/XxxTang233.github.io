@@ -287,8 +287,8 @@ var store = [{
 "url": "https://we.sakura.bio//wiki/lug/mailinglist/",
 "teaser": null
 },{
-"title": "LUG 负责人",
-"excerpt":"公共联系方式 联系我们 主要负责人 代号 职务 姓名 邮箱 CEO 执行会长 袁一玮 - - 执行副会长 高泽豫 - - 执行副会长 李缙 - CTO 技术部部长 明宇龙 - - 技术部副部长 罗丽薇 - CFO 财务部部长 邱子悦 - COO 运营部部长 罗丽薇 - CPO 资产部部长 胡清宇 - MSC MSC 事务 陈泳融 - - 团支书 胡清宇 - - 社长...","categories": [],
+"title": "HCOI 负责人",
+"excerpt":"公共联系方式 联系我们 主要负责人 职务 姓名 会长 (CEO) 唐文杰 副会长 (CTO) - 副会长 (COO) - HCOI项目负责人 注意：部分信息已过时。 项目 简介 负责人 mirrors 科大开源软件镜像 cuihao, zsj, knight, yifan PXE 科大网络启动服务 cuihao 图书馆查询机 基于PXE网络启动 cuihao, hosiet HCOI 主页 (this wiki) hosiet 邮件列表 LUG邮件列表 stephen, yifan SNS 人人, G+, etc hosiet FTP https://ftp.ustclug.org/ hosiet, yifan...","categories": [],
 "tags": [],
 "url": "https://we.sakura.bio//wiki/lug/person-in-charge/",
 "teaser": null

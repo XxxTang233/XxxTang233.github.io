@@ -6,7 +6,7 @@ var store = [{
 "teaser": null
 },{
 "title": "图片测试",
-"excerpt":"  ","categories": ["LUG网站"],
+"excerpt":"  ","categories": ["HCOI网站"],
 "tags": [],
 "url": "https://we.sakura.bio//news/2020/10/imgtest/",
 "teaser": null

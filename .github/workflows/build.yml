@@ -3,10 +3,7 @@ name: build
 on:
   push:
     branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
+      - master
 
 jobs:
   build:
@@ -20,50 +17,24 @@ jobs:
     - uses: actions/setup-ruby@v1
       with:
         ruby-version: 2.7
-    - uses: actions/setup-node@v1
-      with:
-        node-version: 12
-
-    - name: Cache Ruby Bundler
+    - name: Setup cache for Bundler
       id: cache
-      uses: actions/cache@v2
-      env:
-        CACHE_ID: 1
+      uses: actions/cache@v1
       with:
         path: vendor/bundle
-        key: ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-${{ hashFiles('Gemfile') }}
+        key: ${{ runner.os }}-bundler-2.7-${{ hashFiles('Gemfile') }}
         restore-keys: |
-          ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
-    - name: Cache Node modules
-      uses: actions/cache@v2
-      env:
-        CACHE_ID: 1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-npm-${{ env.CACHE_ID }}-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-npm-${{ env.CACHE_ID }}-
-
+          ${{ runner.os }}-bundler-2.7-
     - name: Install dependencies
       run: |
-        bundle install --path=vendor/bundle --jobs=4 --retry=3
+        sudo apt-get -y install libgsl-dev
+        bundle install --path=vendor/bundle
         bundle clean
-        npm install
-
-    - name: Prettier check
-      run: |
-        npm run check
-
     - name: Prepare build
-      if: github.ref == 'refs/heads/master'
       run: |
         git clone --depth=1 --branch=gh-pages --single-branch --no-checkout \
           "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" \
           _site
-    - name: Run Jekyll Doctor
-      run: |
-        bundle exec jekyll doctor --trace --profile
-
     - name: Build site
       run: |
         bundle exec jekyll build --trace --profile
@@ -72,22 +43,18 @@ jobs:
       env:
         JEKYLL_ENV: production
         JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/master'
       run: |
         CINFO="$(git log -1 --pretty="%an: [%h] %s")"
         pushd _site/ &>/dev/null
-        echo -n xxxtang233.github.io > CNAME
+        echo -n XxxTang233.github.io > CNAME
         git add -A
         git -c user.name=GitHub -c user.email=noreply@github.com commit \
           -m "Auto deploy from GitHub Actions build ${GITHUB_RUN_NUMBER}" \
           -m "$CINFO"
         git push
         popd &>/dev/null
-
     - name: Call webhook
-      if: "github.repository == 'XxxTang233/XxxTang233.github.io' && github.ref == 'refs/heads/master'"
       env:
         WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
       run: ruby _scripts/webhook.rb

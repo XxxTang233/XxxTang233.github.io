@@ -22,7 +22,7 @@ description              : "HUNAN"
 url                      : "https://xxxtang233.github.io/"
 static_url               : "/static"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "ustclug/website" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "XxxTang233/XxxTang233.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/static/lug-penguin.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
